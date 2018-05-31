@@ -2,7 +2,6 @@
 ## Gradeable functions are below
 
 ## Creates an inverse cacheable matrix
-
 makeCacheMatrix <- function(x = matrix()) {
       inv <- NULL
       set <- function(y) {
@@ -19,10 +18,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
-
+## Return a matrix that is the inverse of 'x'
 cacheSolve <- function(x, ...) {
-      ## Return a matrix that is the inverse of 'x'
       inv <- x$getInverse()
       if (!is.null(inv)) {
             return(inv)
